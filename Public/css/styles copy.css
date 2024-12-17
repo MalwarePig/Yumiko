@@ -1,0 +1,92 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+img {
+	width: 100%;
+     height: 100%;
+     object-fit: contain;
+}
+
+body {
+     min-height: 100vh;
+     font-family: 'Century Gothic,', sans-serif;
+     font-size: 8px;
+	font-weight: 200;
+     background: rgb(102,32,143);
+     background: linear-gradient(170deg, rgba(102,32,143,1) 0%, rgba(58,9,121,1) 47%, #d32763 100%); 
+     display: flex;
+     align-items: center;
+}
+ 
+.contenedor { 
+     background-image: url('../images/papel.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     
+	/* background-color: #fff; */
+	width: 90%;
+	margin: 5px auto;
+	padding: 40px;
+	border-radius: 10px;
+
+     box-shadow: 0px 0px 30px rgb(235, 200, 2); 
+}
+
+ 
+ 
+main { 
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+   
+} 
+
+.contenedor-texto .titulo {  
+     font-size: 30px;
+     font-weight: normal;
+     margin-bottom: 40px;
+}
+
+.contenedor-texto .mascota {
+     color: #dba100;
+     font-style: normal;
+     text-shadow: 2px 2px 2px rgba(193, 20, 209, 0.24);
+}
+
+.contenedor-texto p { 
+     margin-bottom: 40px;
+     line-height: 36px;
+}
+
+h2{
+     z-index: 1;
+     opacity: 1;
+}
+.btn-link {
+     display: inline-block;
+     padding: 10px 30px;
+	border-radius: 100px;
+     margin-right: 10px;
+     text-decoration: none;
+     background: #f2f2f2;
+}
+
+.btn-link:hover,
+.btn-link.activo {
+	color: #fff;
+	background: #5b4a9a;
+}
+
+@media screen and (max-width: 915px) {
+     main {
+          flex-direction: column;
+          text-align: center;
+     }
+
+     main .contenedor-img {
+          margin-bottom: 40px;
+     }
+}
+  

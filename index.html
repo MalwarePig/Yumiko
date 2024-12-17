@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>HBD YUMIKO</title>
+	<!-- Para poder hostear librerias de terceros -->
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+		integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+		integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./Public/css/styles.css">
+	<link rel="stylesheet" href="./Public/sass/particulas.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+	<!-- led -->
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+	<!-- fireworks -->
+	<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+	<!-- Musica -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>
+	<!-----------------------------------------------     incluir cabezera navegacion     ---------------------------------------------------------------->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+</head>
+
+<body onload="Modal()">
+
+	<div id="particle-container">
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+		<div class="particle"></div>
+	</div>
+
+	<div class="containerLetrero">
+		<h1 class="neon">•. HBD .•</h1>
+		<p class="neon2">YUMIKO</p>
+		<p class="neon3">
+			<span class="flicker1">♥</span>
+			<span class="flicker2">♥</span>
+			<span class="flicker3">♥</span>
+		</p>
+	</div>
+
+	<div class="contenedor">
+		<main>
+			<div class="contenedor-texto">
+				<!-- Forma #1 -->
+				<h2 class="titulo"><span class="typed"></span></h2>
+			</div>
+		</main>
+	</div>
+
+
+	<!-- <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true"></div> -->
+	<!-- Modal -->
+	<div class="modal " id="sobreModal" role="dialog" tabindex="-1" role="dialog" id="ModalRegistroInspeccion"
+		aria-labelledby="myLargeModalLabel" aria-hidden="false" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog">
+			<div class="modal-content" id="Carta" onclick="CerrarModal()">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<div class="modal-body">
+								<div id="FondoSobre">
+
+								</div>
+								<!-- <img class="img-fluid d-block mx-auto" src="../images/carta.webp"
+								alt="..." id="imagenTarjeta"/> -->
+								<h3 id="InfoCarta">Para: <span>Yumiko</span> </h3>
+								<h3 id="InfoCarta">De: <span>Osvaldo</span> </h3>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+	<script>
+		console.log("ssss");
+		/*Musica*/
+		var sound = new Howl({
+			src: ['../hbd.mp3'],
+			volume: 1.0,
+			onend: function () {
+				alert('We finished with the setup!');
+			}
+		});
+
+		function Modal() {
+			$("#sobreModal").modal("show")
+		}
+
+		function CerrarModal() {
+			$("#sobreModal").modal("toggle")
+			SobreAbierto()
+		}
+
+
+		function SobreAbierto() {
+			sound.play();
+			const Cancion = `Hola mi vidaaa ❤❤❤ feliz cumpleaños mi amor!! <br>
+    Mira este es un pequeño detalle porque no puedo estar ahorita contigo,
+    sabes que te deseo lo mejor mi amor... y obvio soy yoooo así que ya la llevas de gane,
+    es broma corazón ya sabes como digo cosas, este es el primer año que celebramos un cumpleaños, 
+    cuando me conociste ya tenía una semana que pasó mi cumple, tal vez me hubieras regalado los lego de pokemon que quería 😅😅,
+    pero no importa, porque fuiste como el regalo que siempre llega tarde, lo más bonito que ha pasado en este año tan malo, me alegra
+    mucho como terminaron las cosas entre nosotros, que al conocernos teníamos planes muy diferentes...y terminamos nosotros juntos 🤡🤡🤡 <br>
+    jaja juraste que me ayudarías a enamorarme, pero no creímos que sería entre nosotros 😍😍 y aquí seguimos mi vida... en un periodo corto ya pasamos
+    muchas peleas, momentos feos, pero aquí seguimos amor, y todo eso lo vamos a superar siempre mi hermosa toxicaaaa. <br>
+    Mi vida espero que el resto del día realmente lo puedas disfrutar mucho y no te estrese el trabajo...o yo 😅😅😘😘 ojala también te den muchos regalos
+    porque no te pude dar ahorita algo más, pero que si me entero que te regaloooo algo un sugar o un amiguitooo te lo tirooo LUCEROOOO 🤬🤬😮‍💨😮‍💨 ya ya me calme
+    jajaja mi vidaaaa haaaa te amooooo te amo mucho 💜💜💜 creo que escribí casi una carta para 14 de febrero que de cumpleaños jajaja ni modo vas a repetir
+    regalo ese día 😅😅😘😘 mi vida hermosaaa me guardas pastel... y si dan tamales tambien jajajajaja te mandoo muchos besos 💜 😘😘😘`
+
+
+			const typed = new Typed('.typed', {
+				strings: [
+					'<i class="mascota">HBD!!....mmm no, así no</i>',
+					'<i class="mascota">Holiii que onda... hay no eso fue muy seco 😅</i>',
+					'<i class="mascota">Que onda mamiii... mmmm... no, muy naco 🙃</i>',
+					'<i class="mascota">' + Cancion + '</i>',
+				],
+
+				//stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
+				typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
+				startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+				backSpeed: 20, // Velocidad en milisegundos para borrrar una letra,
+				smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
+				shuffle: false, // Alterar el orden en el que escribe las palabras.
+				backDelay: 1500, // Tiempo de espera despues de que termina de escribir una palabra.
+				loop: true, // Repetir el array de strings
+				loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
+				showCursor: true, // Mostrar cursor palpitanto
+				cursorChar: '|', // Caracter para el cursor
+				contentType: 'html', // 'html' o 'null' para texto sin formato
+			});
+
+
+
+
+
+			/**FIREWORKS*/
+
+			setInterval(() => {
+				var duration = 15 * 1000;
+				var animationEnd = Date.now() + duration;
+				var defaults = { startVelocity: 10, spread: 350, ticks: 90, zIndex: 0 };
+
+				function randomInRange(min, max) {
+					return Math.random() * (max - min) + min;
+				}
+
+				var interval = setInterval(function () {
+					var timeLeft = animationEnd - Date.now();
+
+					if (timeLeft <= 0) {
+						return clearInterval(interval);
+					}
+
+					var particleCount = 35 * (timeLeft / duration);
+					// since particles fall down, start a bit higher than random
+					confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
+					confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
+				}, 250);
+			}, 22000);
+
+		}
+	</script>
+
+
+
+</body>
+
+</html>
