@@ -83,7 +83,6 @@ body {
      border-radius: 60px;
      max-width: 600PX;
      margin: 50PX auto;
-    
      padding: 20px;
      text-align: center;
      color: white;
@@ -100,7 +99,7 @@ body {
      font-family: monospace;
      letter-spacing: 8px;
      margin: 0;
-     font-size: 100px;
+     font-size: 80px;
      text-shadow: 0 0 5px yellow, 0 0 15px yellow, 0 0 30px yellow;
    }
    

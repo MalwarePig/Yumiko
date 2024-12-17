@@ -130,7 +130,7 @@
 
 
 		function SobreAbierto() {
-			sound.play();
+			//sound.play();
 			const Cancion = `Hola mi vidaaa ❤❤❤ feliz cumpleaños mi amor!! <br>
     Mira este es un pequeño detalle porque no puedo estar ahorita contigo,
     sabes que te deseo lo mejor mi amor... y obvio soy yoooo así que ya la llevas de gane,
@@ -175,6 +175,7 @@
 			/**FIREWORKS*/
 
 			setInterval(() => {
+				sound.play();
 				var duration = 15 * 1000;
 				var animationEnd = Date.now() + duration;
 				var defaults = { startVelocity: 10, spread: 350, ticks: 90, zIndex: 0 };
